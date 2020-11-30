@@ -45,3 +45,4 @@ python detection_numbers_image.py
 Output from the command propmt : 
 
 ![alt_text](https://github.com/Anustup900/Detecting-Numbers-from-Jersey/blob/main/Assets/img%201.PNG)
+![alt_texts](https://github.com/Anustup900/Detecting-Numbers-from-Jersey/blob/main/Assets/img%202.PNG)
