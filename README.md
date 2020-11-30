@@ -21,4 +21,27 @@ The process how our algorithm works is something like this :
 ```
 ### How to Run the script : 
 
-Before 
+Before knowing how to run the script let us know how our script is working : 
+```
+Step 1 : First collect and save the data at /Images/.. folder 
+Step 2 : Then create a dummy data for numbers values at ../Data/generalsamples.data folder 
+Step 3 : Create a Support training library to help in image denoising and deal with hazy images ,
+         hence run the script ../support_library.py 
+Step 4 : Next train the model K-means for image segmentation and dong homography etc 
+         by running the ../training.py
+Step 5 : Finally run ../detection_numbers_image.py for final edge detection and having the output
+```
+Now finally run the script in this manner : 
+```
+Clone the repo .../ git.clone.../
+cd C:// "path of cloned repo "
+python detection_numbers_image.py
+     input the image number 
+     
+#### Output #####
+```
+### Working outputs : 
+
+Output from the command propmt : 
+
+![alt_text](img1.PNG)
