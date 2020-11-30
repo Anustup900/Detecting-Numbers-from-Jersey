@@ -52,7 +52,7 @@ cv2.imshow("gris",grises)
 mascara=np.zeros(image.shape[:2], dtype="uint8")
 cv2.rectangle(mascara, (xf, rois), (xf+800, rois+90), 255, -1)
 image1=cv2.bitwise_and(grises,grises,mask=mascara)
-cv2.imshow("MEDIDOR ELECTRICO",image)
+cv2.imshow("Image",image)
 cv2.waitKey(0)
 #FILTER-----------------------------------------------------------------------------------------------------------------
 blurred = cv2.GaussianBlur(image1, (7,7),0)
@@ -87,7 +87,7 @@ for (c,_) in cnts:
                 retval, results, neigh_resp, dists = model.findNearest(roi_small, k = 1)
                 string = str(int((results[0][0])))
                 cv2.putText(image, str(string), (x - 10, y - 10),cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 2)
-                cv2.imshow("MEDIDOR ELECTRICO",image)
+                cv2.imshow("Image",image)
                 cv2.waitKey(0)
 #CONCATENATE NUMBERS----------------------------------------------------------------------------------------------------
                 digito=support_library.concatenar(results,contador,digito)
@@ -95,4 +95,4 @@ for (c,_) in cnts:
                 contador2=contador2+1
                 contador-=1
 #NUMBER DETECTED--------------------------------------------------------------------------------------------------------
-print ('El numero facturado es:',consumo)
+print ('The number in the players Jersey is :',consumo)
